@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Paged.js Sample</title>
+<script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+<style>
+    @page {
+	size: A4;
+	margin: 20mm;
+	/* auto page numbering 
+	@bottom-right-corner {
+	    content: "Page " counter(page);
+	}
+	*/
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    body {
+	font-family: Lato, sans-serif;
+	font-size: 1em; /* https://simplecss.eu/pxtoems.html */
+	color: rgba(0,0,128,1);
+        line-height: 1.45; 
+        /* https://practicaltypography.com/summary-of-key-rules.html#:~:text=Point%20size%20should%20be%2010,90%20characters%20(including%20spaces). */
+    }
+
+    h1 {
+	break-before: page;
+    }
+
+    .new-page {
+	break-before: page;
+    }
+
+    .lato-regular {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px; /* 18px is a good middle ground for web */
+      line-height: 1.5; /* 150% of the font size */
+      max-width: 70ch; /* Approximately 70 characters per line */
+      margin: 0 auto; /* Center the content */
+      padding: 1em;
+      /* color: #333; Dark gray for better readability */
+      color: #333;
+      /* color: rgba(0,0,128,1); */
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    p {
+      margin-bottom: 1em;
+      /* text-indent: 1.5em; First-line indent */
+      hyphens: auto; /* Enable hyphenation */
+      /* 
+      text-align: justify;
+      text-justify: inter-word;
+      */
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+    }
+
+
+    /* Avoid underlining except for links */
+    a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Proper styling for all caps */
+    .all-caps {
+      text-transform: uppercase;
+      letter-spacing: 0.05em; /* 5% extra letterspacing */
+    }
+
+    /* Proper small caps (if available) */
+    .small-caps {
+      font-variant: small-caps;
+      letter-spacing: 0.05em;
+    }
+
+    /* Styling for bold and italic */
+    strong, b {
+      font-weight: 700;
+    }
+
+    em, i {
+      font-style: italic;
+    }
+
+    /* Proper quotation marks */
+    q {
+      quotes: """ """ "'" "'";
+    }
+
+    /* Proper trademark and copyright symbols */
+    .trademark::after {
+      content: "™";
+    }
+
+    .registered::after {
+      content: "®";
+    }
+
+    .copyright::before {
+      content: "©";
+    }
+
+    /* Proper ellipsis */
+    .ellipsis::after {
+      content: "\2026";
+    }
+
+    /* Styling for ampersands */
+    .ampersand {
+      font-style: italic;
+    }
+
+    /* Nonbreaking space after paragraph and section marks */
+    .para-mark::after {
+      content: "\00A0";
+    }
+
+    .section-mark::after {
+      content: "\00A0";
+    }
+
+    /* Ensure apostrophes point downward */
+    .apostrophe::before {
+      content: "'";
+    }
+
+    /* Straight foot and inch marks */
+    .feet::after {
+      content: "′";
+    }
+
+    .inches::after {
+      content: "″";
+    }
+</style>
+</head>
+<body>
+<div class="new-page">
+<p class="lato-regular">
+Dear Weberon
+</p>
+<p class="lato-regular">
+I will get straight to the point. I may have a buyer for your home in San Ramon, if you are interested. My buyer is extremely interested in your area and they’ve asked me to contact you to see if you may consider selling. This is a real buyer and is not a ploy to get your attention.
+</p>
+<p class="lato-regular">
+My name is Praveen Kumar, Broker Owner at WebeRealty, and my Buyers' Names are Vivek and Vijay. They absolutely love San Ramon and they are willing to pay top dollar for your home. They are also flexible with the possession date, allowing you enough time to find your next home. This may be a perfect opportunity to sell your home for top dollar to an extremely motivated buyer while prices are still high.
+</p>
+<p class="lato-regular">
+To better explain, I’ve created a short video that you can watch by holding your camera on your phone over the QR Code below and see how this would work to get you top dollar for your home with the least hassle. If you have any questions, you can reach me at my contact info below. This would be a confidential call, at absolutely no cost or obligation.
+</p>
+<p class="lato-regular">
+In case you are not considering a sale of your home, you can unsubscribe by scanning the QR code below.
+</p>
+</div>
+
+<!-- <div class="new-page">
+<p class="lato-regular">
+Dear Weberon
+</p>
+<p class="lato-regular">
+I will get straight to the point. I may have a buyer for your home in San Ramon, if you are interested. My buyer is extremely interested in your area and they’ve asked me to contact you to see if you may consider selling. This is a real buyer and is not a ploy to get your attention.
+</p>
+<p class="lato-regular">
+My name is Praveen Kumar, Broker Owner at WebeRealty, and my Buyers' Names are Vivek and Vijay. They absolutely love San Ramon and they are willing to pay top dollar for your home. They are also flexible with the possession date, allowing you enough time to find your next home. This may be a perfect opportunity to sell your home for top dollar to an extremely motivated buyer while prices are still high.
+</p>
+<p class="lato-regular">
+To better explain, I’ve created a short video that you can watch by holding your camera on your phone over the QR Code below and see how this would work to get you top dollar for your home with the least hassle. If you have any questions, you can reach me at my contact info below. This would be a confidential call, at absolutely no cost or obligation.
+</p>
+<p class="lato-regular">
+In case you are not considering a sale of your home, you can unsubscribe by scanning the QR code below.
+</p>
+</div> -->
+</body>
+</html>

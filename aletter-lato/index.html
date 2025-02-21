@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="/aletter-lato/css/main.css" rel="stylesheet" />
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-smooth: always;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    p {
+      text-indent: 0px;
+      text-align: justify;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: 'biro_script_standard_us';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      vertical-align: middle;
+      src: url('/aletter-lato/font/biro_script_standard_us.woff') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'noto_sans_jp';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      vertical-align: middle;
+      src: url('/aletter-lato/font/noto_sans_jp.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'lato_regular';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      vertical-align: middle;
+      src: url('/aletter-lato/font/lato_regular.ttf') format('truetype');
+    }
+
+    * {
+      font-family: 'lato_regular', sans-serif; /* Ensure fallback */
+      font-weight: 400;
+      font-feature-settings: "liga" 0;
+      font-variant-ligatures: none;
+      font-feature-settings: "liga" 0, "clig" 0;
+    }
+
+    .a4parent {
+      justify-content: center;
+    }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      min-height: 11in;
+      width: 8.5in;
+      justify-content: space-between;
+      border: 1px solid;
+    }
+
+    @media all and (max-width: 8.5in) {
+      .page {
+        width: 100%;
+        border: none;
+      }
+
+      .a4parent {
+        width: 100%;
+      }
+
+    }
+
+    @media print {
+      .a4parent {
+        justify-content: start;
+        width: 8.5in;
+      }
+
+      .page {
+        border: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page" id="__next" class="v6_6">
+    <div class="v63_90">
+      <div class="v175_987">
+        <div class="v233_2">
+          <div class="v233_24">
+            <div class="v14_20"><span class="top v14_21">Dear {{{alias}}}</span><span class="top v21_39">I will get straight to
+                the point. I may have a buyer for your home in {{{city}}}, if you are interested. My buyer is extremely
+                interested in your area and they’ve asked me to contact you to see if you may consider selling. This is
+                a real buyer and is not a ploy to get your attention.</span><span class="top v21_40">My name is
+                {{{realtor_info}}}, and my {{{text_before_buyer_names}}} {{{buyer_names}}}. They absolutely love
+                {{{city}}} and they are willing to pay top dollar for your home. They are also flexible with the
+                possession date, allowing you enough time to find your next home. This may be a perfect opportunity to
+                sell your home for top dollar to an extremely motivated buyer while prices are still high.</span><span
+                class="top v21_42">To better explain, I’ve created a short video that you can watch by holding your camera
+                on your phone over the QR Code below and see how this would work to get you top dollar for your home
+                with the least hassle. If you have any questions, you can reach me at my contact info below. This would
+                be a confidential call, at absolutely no cost or obligation.</span><span class="top v21_44">In case you are
+                not considering a sale of your home, you can unsubscribe by scanning the QR code below.</span>
+              <div class="v63_67"></div>
+            </div>
+            <div class="v63_89">
+              <div class="v63_77"><span class="v63_70">{{{signature}}}</span><span
+                  class="v84_4">{{{sigline1}}}</span><span class="v63_71">{{{sigline2}}}</span><span
+                  class="v63_73">{{{sigline3}}}</span><span class="v63_75">{{{sigline4}}}</span></div>
+              <div class="v63_78">
+                <div class="v66_91">
+                  <div class="v66_92"><span class="v66_93">Scan QR code</span><span class="v66_94">or</span><span
+                      class="v66_95">Call {{{cta1}}}</span><span class="v66_96">{{{cta2}}}</span></div>
+                  <div class="v66_97"><canvas component-type="qrCodeContent">{trackableurl}</canvas></div>
+                </div>
+              </div>
+            </div><span class="v233_7">{{{id}}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/aletter-lato/js/handlebar.js"></script>
+  <script src="/aletter-lato/js/qrious.min.js"></script>
+  <script src="/aletter-lato/js/custom.js"></script>
+</body>
+
+</html>

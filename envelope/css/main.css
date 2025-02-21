@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  margin: 0px;
+}
+.v245_2 {
+  width: 912px;
+  height: 396px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v248_17 {
+  width: 419px;
+  height: 225px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: -12px;
+  opacity: 1;
+  position: absolute;
+  top: 114px;
+  left: 319px;
+  transform: rotate(-1deg);
+  overflow: hidden;
+}
+.v248_10 {
+  width: 419px;
+  color: #4945bf;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: biro_script_standard_us;
+  font-weight: Regular US;
+  font-size: 29px;
+  opacity: 1;
+  text-align: left;
+}
+.v248_11 {
+  width: 419px;
+  color: #4945bf;
+  position: absolute;
+  top: 53px;
+  left: 1px;
+  font-family: biro_script_standard_us;
+  font-weight: Regular US;
+  font-size: 29px;
+  opacity: 1;
+  text-align: left;
+}
+.v248_13 {
+  width: 419px;
+  color: #4945bf;
+  position: absolute;
+  top: 106px;
+  left: 3px;
+  font-family: biro_script_standard_us;
+  font-weight: Regular US;
+  font-size: 29px;
+  opacity: 1;
+  text-align: left;
+}
+.v248_15 {
+  width: 419px;
+  color: #4945bf;
+  position: absolute;
+  top: 159px;
+  left: 5px;
+  font-family: biro_script_standard_us;
+  font-weight: Regular US;
+  font-size: 29px;
+  opacity: 1;
+  text-align: left;
+}
+.v248_24 {
+  width: 831px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  overflow: hidden;
+}
+.v248_9 {
+  width: 297px;
+  height: 78px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 6px;
+  opacity: 1;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  overflow: hidden;
+}
+.v248_6 {
+  width: 297px;
+  color: #4945bf;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: biro_script_standard_us;
+  font-weight: Regular US;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v248_7 {
+  width: 297px;
+  color: #4945bf;
+  position: absolute;
+  top: 42px;
+  left: 0px;
+  font-family: biro_script_standard_us;
+  font-weight: Regular US;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v248_18 {
+  width: 80px;
+  color: #4945bf;
+  position: absolute;
+  top: 31px;
+  right: 61px;
+  font-family: arial;
+  font-weight: Italic;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}

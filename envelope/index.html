@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="/envelope/css/main.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        span.prospect {
+            color: darkviolet;
+        }
+
+        span.customer {
+            color: brown;
+        }
+
+        span.campaign {
+            color: #FF6B35;
+        }
+
+        @font-face{
+            font-family: 'biro_script_standard_us';
+            font-style: normal;
+            vertical-align: middle;
+            src: url('/envelope/font/biro_script_standard_us.woff');
+            }
+            @font-face{
+            font-family: 'arial';
+            font-style: normal;
+            vertical-align: middle;
+            src: url('/envelope/font/arial.ttf');
+            }
+    </style>
+</head>
+
+<body>
+    <div id="__next" class="v245_2">
+        <div class="v248_17"><span class="v248_10">To,</span><span class="v248_11">{{{alias}}}</span><span
+                class="v248_13">{{{address1}}}</span><span class="v248_15">{{{city}}}, {{{state}}} - {{{zip}}}</span>
+        </div>
+        <div class="v248_24">
+            <div class="v248_9"><span class="v248_6">{{{return_address_line1}}}</span><span
+                    class="v248_7">{{{return_address_line2}}}</span></div><span class="v248_18">
+                {{{id}}}</span>
+        </div>
+    </div>
+    <script src="/envelope/js/handlebars.js"></script>
+  <script src="/envelope/js/custom.js"></script>
+</body>
+
+</html>
