@@ -160,7 +160,7 @@ span.campaign {
   top: -2px;
   left: 0px;
   font-family: biro_script_standard_us;
-  font-weight: Regular US;
+  font-weight: bold;
   font-size: 33px;
   opacity: 1;
   text-align: left;
@@ -237,6 +237,7 @@ span.campaign {
   top: 8px;
   left: 6px;
   overflow: hidden;
+  font-weight: bold;
 }
 .v66_92 {
   width: 156px;
@@ -322,7 +323,7 @@ span.campaign {
   left: -13px;
   overflow: hidden;
   font-size: 18px;
-  color: black;
+  color: lightgrey;
   /* New properties */
   text-align: left;          /* Aligns text to the left */
   /* transform: scaleY(-1); */
