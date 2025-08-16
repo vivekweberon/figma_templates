@@ -157,7 +157,7 @@ span.campaign {
   width: 330px;
   color: rgba(0,0,128,1);
   position: absolute;
-  top: -16px;
+  top: -13px;
   left: 0px;
   font-family: biro_script_standard_us;
   font-weight: bold;
@@ -166,54 +166,23 @@ span.campaign {
   text-align: left;
   transform: rotate(-3deg);
 }
-.v84_4 {
+
+.signature-lines {
+  display: flex;
+  flex-direction: column;
+  margin-top: 54px;
+}
+
+.signature-lines span {
   width: 330px;
   color: black;
-  position: absolute;
-  top: 48px;
-  left: 0px;
   font-family: lato_regular;
-  /* font-weight: bold; */
   font-size: 21px;
   opacity: 1;
   text-align: left;
+  /* no absolute positioning */
 }
-.v63_71 {
-  width: 330px;
-  color: black;
-  position: absolute;
-  top: 81px;
-  left: 0px;
-  font-family: lato_regular;
-  /* font-weight: bold; */
-  font-size: 21px;
-  opacity: 1;
-  text-align: left;
-}
-.v63_73 {
-  width: 330px;
-  color: black;
-  position: absolute;
-  top: 115px;
-  left: 0px;
-  font-family: lato_regular;
-  /* font-weight: bold; */
-  font-size: 21px;
-  opacity: 1;
-  text-align: left;
-}
-.v63_75 {
-  width: 330px;
-  color: black;
-  position: absolute;
-  top: 149px;
-  left: 0px;
-  font-family: lato_regular;
-  /* font-weight: bold; */
-  font-size: 21px;
-  opacity: 1;
-  text-align: left;
-}
+
 .v63_78 {
   width: 326px;
   height: 181px;
